@@ -46,7 +46,7 @@ public class Blockbuster {
 		while (keepAsking) {
 			movieList.get(sceneChoice).play();
 			
-		keepAsking = getUserInput("Do you want to watch the movie? Y/N", scrn, 'y', 'n');
+		keepAsking = getUserInput("Do you want to watch the movie? Y/N", scrn, 'Y', 'N');
 		}
 		
 	}
