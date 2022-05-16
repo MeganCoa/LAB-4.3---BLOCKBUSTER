@@ -1,0 +1,73 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Blockbuster {
+
+	public static void main(String[] args) {
+		Scanner scrn = new Scanner(System.in);
+		ArrayList<Movie> movieList = new ArrayList<>();
+		
+		ArrayList<String> sceneSet1 = new ArrayList<String>(Arrays.asList("Group of reporters", " Charles Foster Kane",
+				"millionaire newspaper tycoon", "shown flashbacks from Kane's life", "fascinating man's rise to fame, and how he eventually fell off the top of the world."));
+		movieList.add(new DVD("Citizen Kane", 119, sceneSet1));
+		ArrayList<String> sceneSet2 = new ArrayList<String>(Arrays.asList("Baby is born", "Baby learns to drive",
+				"Baby gets car", "Baby arrested", "Baby goes to prison"));
+		movieList.add(new DVD("Casablanca", 102, sceneSet2));
+		ArrayList<String> sceneSet3 = new ArrayList<String>(Arrays.asList("Baby is born", "Baby learns to drive",
+				"Baby gets car", "Baby arrested", "Baby goes to prison"));
+		movieList.add(new DVD("Singin' In The Rain", 120, sceneSet3));
+		
+		ArrayList<String> sceneSet4 = new ArrayList<String>(Arrays.asList("Baby is born", "Baby learns to drive",
+				"Baby gets car", "Baby arrested", "Baby goes to prison"));
+		movieList.add(new VHS("To Kill A Mockingbird", 120, sceneSet4));
+		ArrayList<String> sceneSet5 = new ArrayList<String>(Arrays.asList("Baby is born", "Baby learns to drive",
+				"Baby gets car", "Baby arrested", "Baby goes to prison"));
+		movieList.add(new VHS("West Side Story", 120, sceneSet5));
+		ArrayList<String> sceneSet6 = new ArrayList<String>(Arrays.asList("F.B.I. trainee Clarice Starling (Jodie Foster) ", "Crawford asks her to question Dr. Hannibal Lecter",
+				"pick Lecter's brains to help them solve another serial murder case", "Buffalo Bill\" (Ted Levine), who has so far killed five victims,", "Case Solved!"));
+		movieList.add(new VHS("The Silence Of The Lambs", 118, sceneSet6));
+	
+	
+		
+		System.out.println("Welcome to GC Blockbuster! \r\n"
+				+ "Please Select a Movie from the list:\r\n"
+				+ " ");
+		//print list of movies
+		System.out.println("Please select a movie you want to watch:");
+		//take user input but start loop here
+		
+		Boolean keepAsking = true;
+		while (keepAsking) {
+			Scanner scan = new Scanner(System.in);
+		
+	
+		keepAsking = getUserInput("Do you want to watch the movie? Y/N", scan, 'Y', 'N');
+		}
+	}
+		
+		
+		
+		
+		
+		public static Boolean getUserInput(String message, Scanner scan, char a, char b) {
+			a = Character.toLowerCase(a);
+			b = Character.toLowerCase(b);
+			Boolean incorrectInput = true;
+			System.out.println(message);
+
+			while (incorrectInput) {
+				incorrectInput = false;
+				char input = scan.next().charAt(0);
+				if (a != input && b != input) {
+					incorrectInput = true;
+					System.out.println("Oops! Try agan!" + message);
+				} else if (a == input) {
+					
+					return true;				
+				}
+		
+			}
+			System.out.println("Goodbye.");
+			return false;	
+}

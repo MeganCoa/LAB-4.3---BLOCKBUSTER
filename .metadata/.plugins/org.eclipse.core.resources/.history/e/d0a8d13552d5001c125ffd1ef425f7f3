@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class VHS extends Movie {
+	private double currentTime = 0;
+	private double MaxScenes = 5;
+	
+	public VHS(String title, double runTime, ArrayList<String> scenes) {
+		super(title, runTime, scenes);
+	}
+	
+	@Override
+	public void play() {
+		
+		printScenes();
+//		for (double i = currentTime; i < MaxScenes; i++  ) {
+//			System.out.println();
+//		}	
+	}
+	public void rewind() {
+		currentTime = 0;	
+	}
+
+}
