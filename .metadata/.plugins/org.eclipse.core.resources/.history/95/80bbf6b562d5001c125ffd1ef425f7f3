@@ -24,25 +24,23 @@ public abstract class Movie {
 		this.scenes = scenes;
 	}
 	
-	//regular constructors and methods for instance variables
-	
 	public Movie(String title, double runTime, ArrayList<String> scenes) {
 		this.title = title;
 		this.runTime = runTime;
 		this.scenes = scenes; 
 	}
+	//regular constructors and methods for instance variables
+	
 	@Override
 	public String toString() {
-		return "Title:" + title + " Runtime:" + runTime + "\nScenes:" + scenes + "\n";
+		return "Title:" + title + "Runtime:" + runTime + "Scenes:" + scenes + "\n";
 	}
 	public void printInfo() {
-		System.out.println("Title:" + this.title + " Runtime:" + this.runTime);
+		System.out.println("Title:" + this.title + "Runtime:" + this.runTime);
 	}
 	public void printScenes() {
-		
 		for(String scene: scenes) {
-			
-			System.out.println("Scene: [" + scenes.indexOf(scene) + "] " + scene);
+			System.out.println("Scene: " + scene);
 		}
 	}
 	public abstract void play();

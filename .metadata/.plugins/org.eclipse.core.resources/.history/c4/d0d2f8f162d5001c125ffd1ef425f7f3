@@ -33,10 +33,10 @@ public abstract class Movie {
 	}
 	@Override
 	public String toString() {
-		return "Title:" + title + " Runtime:" + runTime + "\nScenes:" + scenes + "\n";
+		return "Title:" + title + "Runtime:" + runTime + "Scenes:" + scenes + "\n";
 	}
 	public void printInfo() {
-		System.out.println("Title:" + this.title + " Runtime:" + this.runTime);
+		System.out.println("Title:" + this.title + "Runtime:" + this.runTime);
 	}
 	public void printScenes() {
 		

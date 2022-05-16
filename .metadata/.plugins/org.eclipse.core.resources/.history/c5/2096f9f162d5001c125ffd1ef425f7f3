@@ -21,7 +21,7 @@ public class VHS extends Movie {
 			rewind();
 		}
 		else {
-			System.out.println("Scene: [" + getScenes().get((int) currentTime) + "]\n ");
+			System.out.println("Scene: [" + getScenes().get((int) currentTime) + "] ");
 			currentTime++;
 		}
 	

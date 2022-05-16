@@ -13,7 +13,7 @@ public class DVD extends Movie {
 			System.out.println("Which scene of the DVD " + this.getTitle() + "\n");
 			System.out.println("Would you like to watch? Select 0 to 5:");
 			int sceneChoice = scrn.nextInt();
-			System.out.println("Scene " + sceneChoice + ": " + this.getScenes().indexOf(sceneChoice)+ "\n");
+			System.out.println("Scene " + sceneChoice + ": " + this.getScenes().indexOf(sceneChoice));
 		
 	}
 

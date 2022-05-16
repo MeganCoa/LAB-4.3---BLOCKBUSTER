@@ -3,14 +3,6 @@ import java.util.ArrayList;
 public class VHS extends Movie {
 	private double currentTime = 0;
 	
-	public double getCurrentTime() {
-		return currentTime;
-	}
-
-	public void setCurrentTime(double currentTime) {
-		this.currentTime = currentTime;
-	}
-
 	public VHS(String title, double runTime, ArrayList<String> scenes) {
 		super(title, runTime, scenes);
 	}
@@ -21,7 +13,7 @@ public class VHS extends Movie {
 			rewind();
 		}
 		else {
-			System.out.println("Scene: [" + getScenes().get((int) currentTime) + "]\n ");
+			System.out.println("Scene: [" + getScenes().get((int) currentTime) + "] ");
 			currentTime++;
 		}
 	
