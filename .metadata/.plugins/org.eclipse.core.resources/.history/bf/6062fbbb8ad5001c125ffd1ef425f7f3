@@ -41,10 +41,10 @@ public class Blockbuster {
 		}
 		System.out.println("Please select a movie you want to watch:");
 		//take user input but start loop here
-		int movieChoice = scrn.nextInt();
+		int sceneChoice = scrn.nextInt();
 		Boolean keepAsking = true;
 		while (keepAsking) {
-			movieList.get(movieChoice);
+			movieList.get(sceneChoice);
 			
 		
 		}

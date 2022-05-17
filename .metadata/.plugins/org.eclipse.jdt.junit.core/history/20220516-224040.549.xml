@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DVDTest" project="LAB 4.3 - BLOCKBUSTER" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="DVDTest" time="0.04" uniqueid="[engine:junit-jupiter]/[class:DVDTest]">
+    <testcase name="testVHS1" classname="DVDTest" time="0.035" displayname="testVHS1()" uniqueid="[engine:junit-jupiter]/[class:DVDTest]/[method:testVHS1()]"/>
+    <testcase name="testVHS2" classname="DVDTest" time="0.001" displayname="testVHS2()" uniqueid="[engine:junit-jupiter]/[class:DVDTest]/[method:testVHS2()]"/>
+    <testcase name="testVHS3" classname="DVDTest" time="0.002" displayname="testVHS3()" uniqueid="[engine:junit-jupiter]/[class:DVDTest]/[method:testVHS3()]"/>
+  </testsuite>
+</testrun>

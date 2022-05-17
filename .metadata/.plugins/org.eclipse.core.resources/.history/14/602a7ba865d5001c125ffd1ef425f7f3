@@ -41,33 +41,33 @@ public class Blockbuster {
 		}
 		System.out.println("Please select a movie you want to watch:");
 		//take user input but start loop here
-		int movieChoice = scrn.nextInt();
+		int sceneChoice = scrn.nextInt();
 		Boolean keepAsking = true;
 		while (keepAsking) {
-			movieList.get(movieChoice);
+			movieList.get(sceneChoice);
 			
-		
-		}
 		keepAsking = getUserInput("Do you want to watch the movie? Y/N", scrn, 'y', 'n');
+		}
+		
 	}
 		
 		
 		
 		
 		
-		public static Boolean getUserInput(String message, Scanner scan, char y, char n) {
-			y = Character.toLowerCase(y);
-			n = Character.toLowerCase(n);
+		public static Boolean getUserInput(String message, Scanner scan, char a, char b) {
+			a = Character.toLowerCase(a);
+			b = Character.toLowerCase(b);
 			Boolean incorrectInput = true;
 			System.out.println(message);
 
 			while (incorrectInput) {
 				incorrectInput = false;
 				char input = scan.next().charAt(0);
-				if (y != input && n != input) {
+				if (a != input && b != input) {
 					incorrectInput = true;
 					System.out.println("Oops! Try agan!" + message);
-				} else if (y == input) {
+				} else if (a == input) {
 					
 					return true;				
 				}
