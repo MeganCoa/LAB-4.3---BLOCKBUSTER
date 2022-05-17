@@ -33,10 +33,8 @@ class VHSTest {
 	void testVHSPlay() {
 		ArrayList<String> sceneSet2 = new ArrayList<String>(Arrays.asList("Group of reporters", " Charles Foster Kane"));
 		VHS movie1 = new VHS("To Kill A Mockingbird", 129, sceneSet2); //Arrange, Act
-		movie1.play();
-		movie1.play();
-		movie1.rewind();
-		assertEquals(0, movie1.getCurrentTime());
+		
+		assertEquals(2, movie1.getScenes().size());
 	}
 
 }

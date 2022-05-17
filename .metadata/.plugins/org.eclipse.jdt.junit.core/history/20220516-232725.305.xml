@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="VHSTest" project="LAB 4.3 - BLOCKBUSTER" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="VHSTest" time="0.041" uniqueid="[engine:junit-jupiter]/[class:VHSTest]">
+    <testcase name="testVHS1" classname="VHSTest" time="0.029" displayname="testVHS1()" uniqueid="[engine:junit-jupiter]/[class:VHSTest]/[method:testVHS1()]"/>
+    <testcase name="testVHS2" classname="VHSTest" time="0.005" displayname="testVHS2()" uniqueid="[engine:junit-jupiter]/[class:VHSTest]/[method:testVHS2()]"/>
+    <testcase name="testVHSPlay" classname="VHSTest" time="0.001" displayname="testVHSPlay()" uniqueid="[engine:junit-jupiter]/[class:VHSTest]/[method:testVHSPlay()]"/>
+    <testcase name="testVHSRewind" classname="VHSTest" time="0.003" displayname="testVHSRewind()" uniqueid="[engine:junit-jupiter]/[class:VHSTest]/[method:testVHSRewind()]"/>
+  </testsuite>
+</testrun>

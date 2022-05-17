@@ -13,7 +13,6 @@ public class VHS extends Movie {
 
 	public VHS(String title, double runTime, ArrayList<String> scenes) {
 		super(title, runTime, scenes);
-		currentTime = 0;
 	}
 	
 	@Override
